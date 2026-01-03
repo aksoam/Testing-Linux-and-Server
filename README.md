@@ -49,3 +49,6 @@ Logging:
 
     (Optional – install nmon)
         sudo dnf install nmon -y
+
+
+2. Monitor System Resources
