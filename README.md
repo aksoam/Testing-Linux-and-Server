@@ -83,3 +83,15 @@ sudo dnf install htop nmon -y
             nmon      - provides performance statistics and system load.
             df -h     - displays filesystem usage.
             du -sh *  - identifies space usage per directory.
+            df -hT    - Identifies name read able
+
+![htop provides real-time CPU, memory, and process usage](<Screenshot/htop monitor.png>)
+
+![nmon provides performance statistics and system load](<Screenshot/nmon monitor.png>)
+
+![df -h displays filesystem usage. ](Screenshot/df-h.png)
+
+![du -sh * identifies space usage per directory.](Screenshot/du-sh.png)
+
+![df -hT Identifies name read able ](Screenshot/df-ht.png)
+
