@@ -95,6 +95,56 @@ sudo dnf install htop nmon -y
 
 ![df -hT Identifies name read able ](Screenshot/df-ht.png)
 
+
+# Logging System Metrics
+
+Create log directory:
+
+            sudo mkdir -p /var/log/system-monitor
+
+![mkdir](Screenshot/mkdir.png)
+
+Create logging script:
+            sudo vi /usr/local/bin/system_monitor.sh
+
+![vi editor ](Screenshot/vi.png)
+
+
+open file and past below script 
+
+            #!/bin/bash
+            echo "Date: $(date)" >> /var/log/system-monitor/metrics.log
+            uptime >> /var/log/system-monitor/metrics.log
+            free -h >> /var/log/system-monitor/metrics.log
+            df -h >> /var/log/system-monitor/metrics.log
+            ps -eo pid,comm,%cpu,%mem --sort=-%cpu | head -10 >> /var/log/system-monitor/metrics.log
+            echo "----------------------------" >> /var/log/system-monitor/metrics.log
+
+After copy past press:--     :!wq
+
+![Script](Screenshot/script.png)
+
+Make executable:
+
+            sudo chmod +x /usr/local/bin/system_monitor.sh
+
+            
+![alt text](Screenshot/cron.png)
+
+Add cron job (every 10 minutes):
+
+            crontab -e
+
+
+            */10 * * * * /usr/local/bin/system_monitor.sh
+
+
+![crontab ](Screenshot/cron.png)
+
+
+✔ Logs stored in /var/log/system-monitor/metrics.log
+
+
 # Task 2: User Management and Access Control
 Created secure user accounts with isolated workspaces and enforced password policies.
 
