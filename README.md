@@ -22,7 +22,19 @@ This report documents the implementation of system monitoring, user management, 
 
 The activities were carried out to support two developers, Sarah and Mike, under the guidance of a Senior DevOps Engineer. The implementation includes monitoring tools, secure user account management, password policies, and automated backup mechanisms for Apache and Nginx web servers.
 # 2. Task 1: System Monitoring Setup
-         Objective
+Configured system monitoring tools to ensure visibility into system health and performance.
+
+Tools & Commands Used:
+
+    htop / nmon for CPU, memory, and process monitoring
+    df -h for disk usage
+    du -sh for directory-level storage analysis
+    ps for identifying resource-intensive processes
+
+Logging:
+
+    System metrics are logged in:
+
 
         To configure monitoring tools that allow visibility into system performance, resource utilization, and capacity planning.
 
