@@ -40,12 +40,12 @@ Logging:
 ![alt text](<Screenshot/htop repo.png>)
 
 1. Install htop (Preferred) or nmon
-On RHEL / CentOS / Rocky / AlmaLinux
-    sudo dnf install htop -y
+    On RHEL / CentOS / Rocky / AlmaLinux
+        sudo dnf install htop -y
 
-On Ubuntu / Debian
-    sudo apt install htop -y
+    On Ubuntu / Debian
+        sudo apt install htop -y
 
 
-(Optional – install nmon)
-    sudo dnf install nmon -y
+    (Optional – install nmon)
+        sudo dnf install nmon -y
