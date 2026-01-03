@@ -208,3 +208,29 @@ Set permissions:
         sudo chage -l mike
 
         Passwords expire every 30 days.
+
+# Enforce Password Policy
+    Edit:-
+            sudo vi /etc/login.defs
+
+    Set:-- 
+            PASS_MAX_DAYS 90
+            PASS_MIN_DAYS 7
+            PASS_WARN_AGE 7
+
+Install password quality module:
+            sudo dnf install libpwquality -y
+
+Edit:-- 
+            sudo vi /etc/security/pwquality.conf
+
+Example policy:--
+
+            minlen = 12
+            dcredit = -1
+            ucredit = -1
+            ocredit = -1
+            lcredit = -1
+
+✔ Password expiration
+✔ Complexity enforced
