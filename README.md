@@ -95,3 +95,21 @@ sudo dnf install htop nmon -y
 
 ![df -hT Identifies name read able ](Screenshot/df-ht.png)
 
+# Task 2: User Management and Access Control
+Created secure user accounts with isolated workspaces and enforced password policies.
+
+Users Created:
+        sarah
+        mike
+
+Workspace Directories:
+
+        Sarah: /home/sarah/workspace
+        Mike: /home/mike/workspace
+
+Security Controls:
+
+        Directory permissions set to 700
+        Ownership restricted to respective users
+        Password expiration enforced every 30 days
+        Password warning enabled before expiry
