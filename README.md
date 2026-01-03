@@ -37,5 +37,15 @@ Logging:
 
 
         To configure monitoring tools that allow visibility into system performance, resource utilization, and capacity planning.
+![alt text](<Screenshot/htop repo.png>)
 
-![alt text](Screenshot/htop.png)
+1. Install htop (Preferred) or nmon
+On RHEL / CentOS / Rocky / AlmaLinux
+    sudo dnf install htop -y
+
+On Ubuntu / Debian
+    sudo apt install htop -y
+
+
+(Optional – install nmon)
+    sudo dnf install nmon -y
