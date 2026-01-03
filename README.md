@@ -242,6 +242,19 @@ Objective:--
     Automated backups for Apache & Nginx, scheduled weekly, proper naming, verification, logs.
 
 
+Apache Backup (Sarah)
+
+        Configuration: /etc/httpd/
+        Document Root: /var/www/html/
+        Script: apache_backup.sh
+
+Nginx Backup (Mike)
+
+        Configuration: /etc/nginx/
+        Document Root: /usr/share/nginx/html/
+        Script: nginx_backup.sh
+
+
 1. Create Backup Directory
 
             sudo mkdir -p /backup/web
@@ -255,7 +268,7 @@ open the file and past below script
             #!/bin/bash
 
             DATE=$(date +%F)
-            BACKUP_DIR="/backup/web"
+            BACKUP_DIR="/var/www/html/"
             LOG_FILE="/var/log/web_backup.log"
 
             tar -czf $BACKUP_DIR/apache_backup_$DATE.tar.gz /etc/httpd /var/www/html 2>>$LOG_FILE
@@ -269,16 +282,4 @@ Make executable:
 
 ![web file](Screenshot/web.png)
 
-
-Apache Backup (Sarah)
-
-        Configuration: /etc/httpd/
-        Document Root: /var/www/html/
-        Script: apache_backup.sh
-
-Nginx Backup (Mike)
-
-        Configuration: /etc/nginx/
-        Document Root: /usr/share/nginx/html/
-        Script: nginx_backup.sh
 
