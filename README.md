@@ -285,3 +285,25 @@ Make executable:
 ![backup](Screenshot/backup.png)
 
 ![Log](Screenshot/log.png)
+
+
+
+3. Schedule Cron Job (Every Tuesday at 12:00 AM)
+
+crontab -e
+            0 0 * * 2 /usr/local/bin/web_backup.sh
+
+
+![cron backup](<Screenshot/cron backup.png>)
+
+
+4. Verify Backup Integrity
+
+List backups:
+
+            ls -lh /backup/web
+
+Test archive:
+
+            tar -tzf apache_backup_YYYY-MM-DD.tar.gz
+
