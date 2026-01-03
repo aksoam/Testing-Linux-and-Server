@@ -282,4 +282,6 @@ Make executable:
 
 ![web file](Screenshot/web.png)
 
+![backup](Screenshot/backup.png)
 
+![Log](Screenshot/log.png)
