@@ -308,3 +308,19 @@ Test archive:
             tar -tzf apache_backup_YYYY-MM-DD.tar.gz
 
 ![tar](Screenshot/tar.png)
+
+
+
+✔ Backup integrity verified
+
+✔ Logs stored in /var/log/web_backup.log
+
+
+
+Evidence (For Screenshots)
+
+📸 htop CPU usage screen
+📸 df -h disk output
+📸 /etc/login.defs password policy
+📸 crontab -l showing backup schedule
+📸 Backup files in /backup/web
