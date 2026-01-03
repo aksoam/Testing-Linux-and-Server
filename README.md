@@ -1,5 +1,18 @@
 # Testing-Linux-and-Server
-Class
+# Overview
+This repository contains the implementation for setting up and managing a secure, monitored, and well-maintained development environment as part of a DevOps assignment.
+
+The objective of this project is to assist a Senior DevOps Engineer in:
+
+    Monitoring system performance
+    Managing user access securely
+    Automating and verifying backups for web servers
+
+The environment is configured for two developers:
+
+    Sarah – Apache Web Server
+    Mike – Nginx Web Server
+
 # DevOps System Administration
 
 System Monitoring, User Management, and Backup Configuration Prepared By: Fresher DevOps Engineer Environment: Linux Server Users: Sarah and Mike
@@ -12,3 +25,4 @@ The activities were carried out to support two developers, Sarah and Mike, under
          Objective
 
         To configure monitoring tools that allow visibility into system performance, resource utilization, and capacity planning.
+
