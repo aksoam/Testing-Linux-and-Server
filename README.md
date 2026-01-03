@@ -40,6 +40,7 @@ Logging:
 ![alt text](<Screenshot/htop repo.png>)
 
 1. Install htop (Preferred) or nmon
+
     On RHEL / CentOS / Rocky / AlmaLinux
         sudo dnf install htop -y
 
