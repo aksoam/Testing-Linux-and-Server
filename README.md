@@ -41,6 +41,7 @@ Logging:
 For RHEL 9
 
 Enable the CodeReady Builder repository (required for some EPEL dependencies):
+        
         RHEL 9:-- sudo subscription-manager repos --enable codeready-builder-for-rhel-9-$(arch)-rpms
 
 ![alt text](<Screenshot/htop repo.png>)
