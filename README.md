@@ -193,8 +193,17 @@ Set permissions:
 
 # Password Expiration Policy
         Password expiration was enforced using:
+        sudo chage -l sarah
         sudo chage -M 30 sarah
+        
+Testing-Linux-and-Server/Screenshot/age sarah.png
+
+
+        sudo chage -l mike
         sudo chage -M 30 mike
+
+Testing-Linux-and-Server/Screenshot/age mike.png
+        
         To verify:
         sudo chage -l sarah
         sudo chage -l mike
