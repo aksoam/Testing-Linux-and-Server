@@ -37,6 +37,12 @@ Logging:
 
 
         To configure monitoring tools that allow visibility into system performance, resource utilization, and capacity planning.
+
+For RHEL 8 or RHEL 9
+
+    Enable the CodeReady Builder repository (required for some EPEL dependencies):
+        RHEL 9:-- sudo subscription-manager repos --enable codeready-builder-for-rhel-9-$(arch)-rpms
+
 ![alt text](<Screenshot/htop repo.png>)
 
 1. Install htop (Preferred) or nmon
