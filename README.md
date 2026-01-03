@@ -38,3 +38,4 @@ Logging:
 
         To configure monitoring tools that allow visibility into system performance, resource utilization, and capacity planning.
 
+![alt text](Screenshot/htop.png)
