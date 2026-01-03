@@ -238,7 +238,26 @@ Example policy:--
 
 
 # Backup Configuration for Web Servers
-Objective
+Objective:-- 
     Automated backups for Apache & Nginx, scheduled weekly, proper naming, verification, logs.
+
+
+1. Create Backup Directory
+
+            sudo mkdir -p /backup/web
+
+2. Backup Script
+            sudo vi /usr/local/bin/web_backup.sh
+============
+            #!/bin/bash
+
+            DATE=$(date +%F)
+            BACKUP_DIR="/backup/web"
+            LOG_FILE="/var/log/web_backup.log"
+
+            tar -czf $BACKUP_DIR/apache_backup_$DATE.tar.gz /etc/httpd /var/www/html 2>>$LOG_FILE
+            tar -czf $BACKUP_DIR/nginx_backup_$DATE.tar.gz /etc/nginx /usr/share/nginx/html 2>>$LOG_FILE
+
+            echo "Backup completed on $(date)" >> $LOG_FILE
 
 
