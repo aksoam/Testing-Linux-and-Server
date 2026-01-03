@@ -264,5 +264,6 @@ open the file and past below script
             echo "Backup completed on $(date)" >> $LOG_FILE
 
 Make executable:
+
             sudo chmod +x /usr/local/bin/web_backup.sh
 
