@@ -268,3 +268,17 @@ Make executable:
             sudo chmod +x /usr/local/bin/web_backup.sh
 
 ![web file](Screenshot/web.png)
+
+
+Apache Backup (Sarah)
+
+        Configuration: /etc/httpd/
+        Document Root: /var/www/html/
+        Script: apache_backup.sh
+
+Nginx Backup (Mike)
+
+        Configuration: /etc/nginx/
+        Document Root: /usr/share/nginx/html/
+        Script: nginx_backup.sh
+
