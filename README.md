@@ -210,7 +210,7 @@ Set permissions:
         Passwords expire every 30 days.
 
 # Enforce Password Policy
-    Edit:-
+Edit:-
             sudo vi /etc/login.defs
 
     Set:-- 
