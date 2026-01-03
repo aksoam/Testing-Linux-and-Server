@@ -320,7 +320,11 @@ Test archive:
 Evidence (For Screenshots)
 
 📸 htop CPU usage screen
+
 📸 df -h disk output
+
 📸 /etc/login.defs password policy
+
 📸 crontab -l showing backup schedule
+
 📸 Backup files in /backup/web
