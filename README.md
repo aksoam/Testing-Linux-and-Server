@@ -150,13 +150,46 @@ Add cron job (every 10 minutes):
 Created secure user accounts with isolated workspaces and enforced password policies.
 
 Users Created:
-        sarah
-        mike
+            sudo useradd sarah
+            sudo useradd mike
 
-Workspace Directories:
+![User add](Screenshot/user.png)
 
-        Sarah: /home/sarah/workspace
-        Mike: /home/mike/workspace
+Set passwords:
+            sudo passwd sarah
+            sudo passwd mike
+
+![Password](Screenshot/password.png)
+
+Create Isolated Workspace Directories:
+
+Sarah: /home/sarah/workspace
+            sudo mkdir /home/sarah/workspace
+
+![Sarah directory ](Screenshot/sarah.png)
+
+
+Mike: /home/mike/workspace
+            sudo mkdir /home/mike/workspace
+
+![mike directory](Screenshot/mike.png)
+
+
+Set ownership:
+            sudo chown -R sarah:sarah /home/sarah
+            sudo chown -R mike:mike /home/mike
+
+![Sarah ](<Screenshot/own sarah.png>)
+
+![Mike](<Screenshot/own mike.png>)
+
+
+Set permissions:
+
+            sudo chmod 700 /home/sarah
+            sudo chmod 700 /home/mike
+
+✔ Only owner can access their directory⚔️⚔️⚔️
 
 Security Controls:
 
