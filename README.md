@@ -128,7 +128,7 @@ Make executable:
 
             sudo chmod +x /usr/local/bin/system_monitor.sh
 
-            
+
 ![alt text](Screenshot/cron.png)
 
 Add cron job (every 10 minutes):
@@ -144,6 +144,7 @@ Add cron job (every 10 minutes):
 
 ✔ Logs stored in /var/log/system-monitor/metrics.log
 
+![Log Stored ](<Screenshot/Log store.png>)
 
 # Task 2: User Management and Access Control
 Created secure user accounts with isolated workspaces and enforced password policies.
