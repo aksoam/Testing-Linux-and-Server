@@ -235,3 +235,10 @@ Example policy:--
 ✔ Password expiration
 
 ✔ Complexity enforced
+
+
+# Backup Configuration for Web Servers
+Objective
+    Automated backups for Apache & Nginx, scheduled weekly, proper naming, verification, logs.
+
+
