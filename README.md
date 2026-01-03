@@ -191,9 +191,12 @@ Set permissions:
 
 ✔ Only owner can access their directory⚔️⚔️⚔️
 
-Security Controls:
+# Password Expiration Policy
+        Password expiration was enforced using:
+        sudo chage -M 30 sarah
+        sudo chage -M 30 mike
+        To verify:
+        sudo chage -l sarah
+        sudo chage -l mike
 
-        Directory permissions set to 700
-        Ownership restricted to respective users
-        Password expiration enforced every 30 days
-        Password warning enabled before expiry
+        Passwords expire every 30 days.
