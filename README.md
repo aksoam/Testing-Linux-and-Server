@@ -26,10 +26,10 @@ Configured system monitoring tools to ensure visibility into system health and p
 
 Tools & Commands Used:
 
-    htop / nmon for CPU, memory, and process monitoring
-    df -h for disk usage
-    du -sh for directory-level storage analysis
-    ps for identifying resource-intensive processes
+    .htop / nmon for CPU, memory, and process monitoring
+    .df -h for disk usage
+    .du -sh for directory-level storage analysis
+    .ps for identifying resource-intensive processes
 
 Logging:
 
