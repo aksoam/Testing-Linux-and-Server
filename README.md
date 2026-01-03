@@ -59,4 +59,20 @@ Enable the CodeReady Builder repository (required for some EPEL dependencies):
         sudo dnf install nmon -y
 
 
+# Monitoring Tools Installation
+    The following tools were used:
+    htop / nmon – for CPU, memory, and process monitoring
+    df          – to monitor disk usage
+    du          – to identify directory-wise disk consumption  
+
+
+Installation (for Fedora-based systems):
+sudo dnf install epel-release -y
+sudo dnf install htop nmon -y
+
+![alt text](<Screenshot/htop install.png>)
+
+![alt text](<Screenshot/htop install1.png>)
+
+![nmon](<Screenshot/nmon install.png>)
 2. Monitor System Resources
