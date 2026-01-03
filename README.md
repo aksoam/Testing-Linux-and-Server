@@ -288,7 +288,7 @@ Make executable:
 
 
 
-3. Schedule Cron Job (Every Tuesday at 12:00 AM)
+# 3. Schedule Cron Job (Every Tuesday at 12:00 AM)
 
 crontab -e
             0 0 * * 2 /usr/local/bin/web_backup.sh
@@ -297,7 +297,7 @@ crontab -e
 ![cron backup](<Screenshot/cron backup.png>)
 
 
-4. Verify Backup Integrity
+# 4. Verify Backup Integrity
 
 List backups:
 
