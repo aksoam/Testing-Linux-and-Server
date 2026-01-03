@@ -247,6 +247,7 @@ Objective:--
             sudo mkdir -p /backup/web
 
 2. Backup Script
+    
             sudo vi /usr/local/bin/web_backup.sh
 
 open the file and past below script 
