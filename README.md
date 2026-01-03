@@ -75,4 +75,11 @@ sudo dnf install htop nmon -y
 ![alt text](<Screenshot/htop install1.png>)
 
 ![nmon](<Screenshot/nmon install.png>)
+
+
 2. Monitor System Resources
+
+    htop      - provides real-time CPU, memory, and process usage.
+    nmon      - provides performance statistics and system load.
+    df -h     - displays filesystem usage.
+    du -sh *  - identifies space usage per directory.
