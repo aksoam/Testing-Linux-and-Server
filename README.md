@@ -307,3 +307,4 @@ Test archive:
 
             tar -tzf apache_backup_YYYY-MM-DD.tar.gz
 
+![tar](Screenshot/tar.png)
